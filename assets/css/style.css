@@ -183,9 +183,6 @@ nguyen tac lam viec:
 #slider {
     position: relative;
     margin-top: 46px;   /*đẩy ảnh xuống để không bị thanh navigation đè lên*/
-    padding-top: 50%;  /* 50% chieu ngang cua chinh no*/
-    background:  url(/The-Band/assets/img/slider/ny.jpg) top center / cover no-repeat,
-    url(/The-Band/assets/img/slider/chicago.jpg) top center / cover no-repeat; 
 }
 
 #slider .text-content {
