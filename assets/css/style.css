@@ -183,7 +183,14 @@ nguyen tac lam viec:
 #slider {
     position: relative;
     margin-top: 46px;   /*đẩy ảnh xuống để không bị thanh navigation đè lên*/
-    
+}
+
+#slider .myslides {
+    position: relative;
+}
+
+#slider .myslides .slider-image {
+    width: 100%;
 }
 
 #slider .text-content {
