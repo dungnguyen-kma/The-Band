@@ -1,7 +1,9 @@
 /* mobile break point */
 @media (max-width: 740px)  {
 
-    .col{
+    .col,
+    .s-full-width,
+    .s-full-height {
         width: 100%;
     }
 
@@ -74,5 +76,8 @@
         width: 60%;
         border-radius: 4px;
     }
+    /* .form-control {
+        margin-bottom: 16px;
+    } */
 
 }

@@ -63,6 +63,10 @@ nguyen tac lam viec:
     margin-top: 16px;
 }
 
+.mt-8 {
+    margin-top: 8px;
+}
+
 .mb-16 {
     margin-bottom: 16px;
 }
@@ -80,6 +84,7 @@ nguyen tac lam viec:
     display: inline-block;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn:hover {
@@ -362,6 +367,7 @@ nguyen tac lam viec:
     padding: 8px;
     width: 100%;
     font-size: 15px;
+    margin-bottom: 8px;
 }
 .row::after {
     content: "";
@@ -369,9 +375,6 @@ nguyen tac lam viec:
     clear: both;
 }
 
-.contact-form .row-form-up {
-    margin-bottom: 8px;
-}
 /* end: content */
 
 .map {
