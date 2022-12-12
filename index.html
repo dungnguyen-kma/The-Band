@@ -36,10 +36,10 @@
             <div class="search-button">
                 <i class="search-icon ti-search"></i>
             </div>
+            <!-- mobile menu button -->
             <div id="nav-mobile-menu" class="nav-menu-btn">
                 <i class="nav-menu-icon ti-menu"></i>
             </div>
-              <!-- end: search button  -->
         </div>
         <!-- begin: slider -->
         <!-- chua hoc javascript nen chi lam 1 anh hien thi -->
@@ -116,7 +116,7 @@
                         <li>November <span class="quantity">3</span></li>
                     </ul>
                     <div class="row places-list">
-                        <div class="col col-third">
+                        <div class="col col-third mb-16">
                             <img src="./assets/img/places/newyork.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -125,7 +125,7 @@
                                 <button class="btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third mb-16">
                             <img src="./assets/img/places/paris.jpg" alt="Paris" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
@@ -134,7 +134,7 @@
                                 <button class="btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third mb-16">
                             <img src="./assets/img/places/sanfran.jpg" alt="San francisco" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
@@ -257,10 +257,16 @@
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
         for (var i = 0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
-            menuItem.onclick = function() {
-                header.style.height = null;
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) { 
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
             }
         }
+
     </script>
 </body>
 <footer>

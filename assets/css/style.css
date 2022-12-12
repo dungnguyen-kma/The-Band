@@ -63,6 +63,10 @@ nguyen tac lam viec:
     margin-top: 16px;
 }
 
+.mb-16 {
+    margin-bottom: 16px;
+}
+
 .pull-right {
     float: right;
 }
@@ -102,6 +106,10 @@ nguyen tac lam viec:
     top: 0;
     left: 0;
     right: 0;
+}
+
+#header .nav-menu-btn {
+    display: none;
 }
 
 #header .search-button {
@@ -296,7 +304,7 @@ nguyen tac lam viec:
 
 /* Place list */
 .places-list {
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     margin-top: 32px;
 }
 
@@ -512,9 +520,4 @@ nguyen tac lam viec:
     mobile: <=740px
  */
 
- /* Table break point */
- @media (min-width: 740px) and (max-width: 1023px) {
 
- }
-
- /* Mobile breakpoint */
