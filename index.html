@@ -7,6 +7,7 @@
     <title>W3 The Band</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -34,6 +35,9 @@
             <!-- begin: search button -->
             <div class="search-button">
                 <i class="search-icon ti-search"></i>
+            </div>
+            <div id="nav-mobile-menu" class="nav-menu-btn">
+                <i class="nav-menu-icon ti-menu"></i>
             </div>
               <!-- end: search button  -->
         </div>
@@ -235,6 +239,29 @@
             event.stopPropagation()
         })
     </script>  
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('nav-mobile-menu');
+        var headerHeight = header.clientHeight;
+        // đóng mở mobile menu
+        mobileMenu.onclick = function() {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+        // đóng menu khi chọn vào band
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function() {
+                header.style.height = null;
+            }
+        }
+    </script>
 </body>
 <footer>
     <div id="footer" class="content-size">

@@ -1,0 +1,45 @@
+/* mobile break point */
+@media (max-width: 740px)  {
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #header {  
+        position: fixed;
+        z-index: 1; /* chỉnh sửa position theo trục z (position cái này đè lên cái kia)*/
+        height: 46px;
+        background-color: black;   
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    #header .search-button {
+        display: none;
+    }
+
+    #header .nav-menu-btn {
+        padding: 0 21px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #header .nav-menu-btn:hover,
+    #header .nav-menu-icon:hover {
+        background-color: #ccc !important;
+        color: black !important;
+    }
+
+    #header .nav-menu-icon {
+        color: white;
+        font-size: 20px;
+        line-height: 46px;
+    }
+
+}

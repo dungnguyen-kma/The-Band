@@ -85,6 +85,7 @@ nguyen tac lam viec:
 
 .content-size {
     width: 800px;
+    max-width: 100%;
     margin: auto;
     padding: 64px 16px;
 }
@@ -106,7 +107,6 @@ nguyen tac lam viec:
 #header .search-button {
     float: right;
     padding: 0 21px;
-
 }
 
 #header .search-button:hover {
@@ -505,3 +505,16 @@ nguyen tac lam viec:
         transform: translateY(0);
     }
 }
+
+/* responsive size
+    PC: >=1024px
+    tablet: >=740px <=1024px
+    mobile: <=740px
+ */
+
+ /* Table break point */
+ @media (min-width: 740px) and (max-width: 1023px) {
+
+ }
+
+ /* Mobile breakpoint */
