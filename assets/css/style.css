@@ -183,6 +183,7 @@ nguyen tac lam viec:
 #slider {
     position: relative;
     margin-top: 46px;   /*đẩy ảnh xuống để không bị thanh navigation đè lên*/
+    
 }
 
 #slider .text-content {
